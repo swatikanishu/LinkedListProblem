@@ -15,6 +15,7 @@ public class LinkedList {
         }
         return newNode;
     }
+
     public void append(int data) { // 56=> 30=> 70
         Node newNode = new Node(data);
         if (head == null) {
@@ -25,7 +26,8 @@ public class LinkedList {
             tail = newNode;
         }
     }
-    public void insertInBetween(Node previousNode ,Node newNode){
+
+    public void insertInBetween(Node previousNode, Node newNode) {
         Node tempNode = previousNode.next;
         previousNode.next = newNode;
         newNode.next = tempNode;
@@ -42,5 +44,14 @@ public class LinkedList {
             }
         }
     }
-}
 
+    public void pop() {
+        if (this.head == null) {
+
+        }
+        Node temp = head;
+        head = temp.next;
+        temp = null;
+    }
+
+}
