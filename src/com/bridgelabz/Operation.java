@@ -51,14 +51,26 @@ public class Operation {
                     System.out.println("After");
                     linkedList.print();
                 }
-                    public static void search(){
-                        LinkedList linkedList=new LinkedList();
-                        Node firstNode= linkedList.push(70);
-                        Node secondNode= linkedList.push(30);
-                        Node newNode=linkedList.push(56);
+                    public static void search() {
+                        LinkedList linkedList = new LinkedList();
+                        Node firstNode = linkedList.push(70);
+                        Node secondNode = linkedList.push(30);
+                        Node newNode = linkedList.push(56);
                         System.out.println("Before");
                         linkedList.print();
                         linkedList.search(30);
+                    }
+    public static void insertAtSpecificIndex() {
+        LinkedList linkedList = new LinkedList();
+        Node firstNode = linkedList.push(70);
+        Node secondNode = linkedList.push(30);
+        Node newNode = linkedList.push(56);
+        System.out.println("Before");
+        linkedList.print();
+        System.out.println("                                      ");
+        linkedList.insertAtSpecificIndex(2, 40);
+        System.out.println("After");
+        linkedList.print();
 
             }
     }

@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Enter 4 to delete the data at first position "); // UC 5
         System.out.println("Enter 5 to delete the data at last position "); // UC 6
         System.out.println("Enter 6 to search the data  "); // UC 7
+        System.out.println("Enter 7 to add at index position "); // UC 8
 
         switch (scanner.nextInt()) {
 
@@ -30,6 +31,9 @@ public class Main {
                 break;
             case 6:
                 Operation.search();
+                break;
+            case 7:
+                Operation.insertAtSpecificIndex();
                 break;
         }
     }
